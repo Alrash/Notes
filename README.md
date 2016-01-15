@@ -1,6 +1,7 @@
 <h1 align="center">C++笔记</h1>
 ----
-<strong>Author:Alrash</strong>
+<!--<strong>Author:Alrash</strong>-->
+<h3>Author:Alrash</h3>
 <br>
 
 ##【目录】
