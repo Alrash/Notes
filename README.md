@@ -1,4 +1,7 @@
 <h1 align="center">C++笔记</h1>
+----
+<strong>Author:Alrash</strong>
+<br>
 
 ##【目录】
 ----
@@ -17,7 +20,7 @@
 
 <h2 name="1">1  杂项</h2>
 <h3 name="1.1">1.1  参数传递</h3>
-C++的参数传递方式有三种:引用传递、值传递、*常量引用传递*<br>
+C++的参数传递方式有三种:引用传递、值传递、**常量引用传递**<br>
 表示形式(按上述顺序)--int &count, bool sign, const vector<int> &arr。其中只有引用传递才能改变实參的实际值，另外两种不能；在无需改变实參值的情况下，对类对象，建议使用常量引用传递，对简单变量，建议使用值传递。<br>
 <br>
 
@@ -92,3 +95,4 @@ explicit	英->中：明确的<br>
 为了解决1.1所讲述的问题，可以在构造函数前添加explicit关键字，例如explicit String(int n)；这时，实例化对象时，String str = 100，就无法编译通过，抑制隐式转换；同时，像int fun(String a)这样参数使用类String的情况，也无法使用fun(2)这样的情况。<br>
 <br>
 总结：explicit可以只对构造函数起作用，用来抑制隐式转换。<br>
+<br>
