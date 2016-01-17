@@ -119,7 +119,7 @@ explicit	英->中：明确的<br>
 一般的声明形式：(struct) tm \*newtime;/(struct) tm newtime;<br>
 <br>
 <!--表格-->
-<table border="1">
+<table>
 <tr>
 <td>成员项</td><td>类型</td><td>代表意义</td><td>取值范围</td>
 </tr>
@@ -127,10 +127,10 @@ explicit	英->中：明确的<br>
 <td>tm_sec</td><td>int</td><td>秒</td><td>0-60</td>
 </tr>
 <tr>
-<td>tm_min</td><td>int</td><td>分<td><td>0-59</td>
+<td>tm_min</td><td>int</td><td>分</td><td>0-59</td>
 </tr>
 <tr>
-tm_hour</td><td>int</td><td>时</td><td>0-23</td>
+<td>tm_hour</td><td>int</td><td>时</td><td>0-23</td>
 </tr>
 <tr>
 <td>tm_mday</td><td>int</td><td>月份的日</td><td>1-31</td>
@@ -139,7 +139,7 @@ tm_hour</td><td>int</td><td>时</td><td>0-23</td>
 <td>tm_mon</td><td>int</td><td>月份</td><td>0-11</td>
 </tr>
 <tr>
-<td>tm_year</td><td>int</td><td>年(从1900开始)</td><td>&nbps;</td>
+<td>tm_year</td><td>int</td><td>年(从1900开始)</td><td> </td>
 </tr>
 <tr>
 <td>tm_wday</td><td>int</td><td>星期</td><td>0-6</td>
@@ -147,7 +147,7 @@ tm_hour</td><td>int</td><td>时</td><td>0-23</td>
 <td>tm_year</td><td>int</td><td>指一年365年的第几天(润年366)</td><td>0-365</td>
 </tr>
 <tr>
-<td>tm_isdst</td><td>int</td><td>夏令时标识</td><td>>&nbps;</td>
+<td>tm_isdst</td><td>int</td><td>夏令时标识</td><td> </td>
 </td>
 </table>
 部分说明：<br>
