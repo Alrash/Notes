@@ -2,6 +2,9 @@
 ----
 <!--<strong>Author:Alrash</strong>-->
 <h3>Author:Alrash</h3>
+<h3>此笔记均以c11及其以后标准为基础</h3>
+<h3>参考网站：</h3>
+http://www.cplusplus.com<br>
 <br>
 
 ##【目录】
@@ -14,6 +17,14 @@
 [****2.1  问题出现](#2.1)<br>
 [****2.2  explicit解释](#2.2)<br>
 [****2.3  explicit作用](#2.3)<br>
+[3  ctime/time.h](#3)<br>
+[****3.1  struct tm](#3.1)<br>
+[****3.2  time_t(暂无)](#3.2)<br>
+[****3.3  size_t(暂无)](#3.3)<br>
+[****3.4  clock_t(暂无)](#3.4)<br>
+[****3.5  mktime](#3.5)<br>
+[********3.5.1  函数原型](#3.5.1)<br>
+[********3.5.2  举例说明](#3.5.2)<br>
 
 ----
 <h2 name="0">0  前言</h2>
@@ -100,4 +111,57 @@ explicit	英->中：明确的<br>
 为了解决1.1所讲述的问题，可以在构造函数前添加explicit关键字，例如explicit String(int n)；这时，实例化对象时，String str = 100，就无法编译通过，抑制隐式转换；同时，像int fun(String a)这样参数使用类String的情况，也无法使用fun(2)这样的情况。<br>
 <br>
 总结：explicit可以只对构造函数起作用，用来抑制隐式转换。<br>
+<br>
+
+<h2 name="3">3  ctime/time.h</h2>
+<h3 name="3.1">3.1  struct_tm</h3>
+包含日历日期和时间，分解其组成部分存储(用结构体)<br>
+一般的声明形式：(struct) tm \*newtime;/(struct) tm newtime;<br>
+<br>
+|成员项|类型|代表意义|取值范围|
+|------|------|------|------|
+|tm_sec|int|秒|0-60|
+|tm_min|int|分|0-59|
+|tm_hour|int|时|0-23|
+|tm_mday|int|月份的日|1-31|
+|tm_mon|int|月份|0-11|
+|tm_year|int|年(从1900开始)||
+|tm_wday|int|星期|0-6|
+|tm_year|int|指一年365年的第几天(润年366)|0-365|
+|tm_isdst|int|夏令时标识||
+部分说明：<br>
+tm_isdst--取0,表示夏令时无影响；大于0,夏令时有作用；小于0,信息不可用<br>
+除了月份的日以外，都是从0开始的(偏移量)<br>
+<br>tm_sec通常取0-59.剩下的范围，以适应某些系统中的闰秒(leap seconds ?)<br>
+<br>
+
+<h3 name="3.2">3.2  time_t</h3>
+<br>
+
+<h3 name="3.3">3.3  size_t</h3>
+<br>
+
+<h3 name="3.4">3.4  clock_t</h3>
+<br>
+
+<h3 name="3.5">3.5  mktime</h3>
+<h4 name="3.5.1">3.5.1  函数原型</h4>
+<font color=green>
+<strong>time_t mktime(struct tm \* timeptr);
+</strong>
+</font>
+<br>
+> * 作用：自动调整参数timeptr所设置的日期，返回time_t类型的日期时间。例如timeptr被赋值为*tm_year = 2016, tm_mon = 1, tm = 30*，会被自动调整成2016-3-1(参考结构体tm成员的范围，月份从0开始)，返回从1970-1-1 0:0:0到2016-3-1 0:0:0的秒数
+> * 参数列表：结构体struct tm指针类型的参数
+> * 返回值：返回参数timeptr对应的time_t类型的日期时间，若不能表示则为-1
+
+<h4 name="3.5.2">3.5.2  举例说明</h4>
+一般举例：
+```cpp
+```
+<br>
+引申举例(计算某日n天后的日期之类)：
+```cpp
+```
+<br>
 <br>
