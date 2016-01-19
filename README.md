@@ -199,6 +199,10 @@ int main()
 	return 0;
 }
 ```
+<div algin="center">
+<img src="https://github.com/bwfullcolor/CPlusPlus_Notes/blob/master/pictures/3.5-mktime%E4%B8%80%E8%88%AC%E4%B8%BE%E4%BE%8B%E7%A4%BA%E6%84%8F%E5%9B%BE.png" alt="" ><br>
+一般举例示意图
+</div>
 <br>
 引申举例(计算某日n天后的日期之类)：
 ```cpp
@@ -235,5 +239,9 @@ int main()
 	return 0;
 }
 ```
+<div algin="center">
+<img src="https://github.com/bwfullcolor/CPlusPlus_Notes/blob/master/pictures/3.5-mktime%E8%AE%A1%E7%AE%97n%E5%A4%A9%E5%90%8E%E7%9A%84%E6%97%A5%E6%9C%9F%E7%A4%BA%E4%BE%8B%E7%A4%BA%E6%84%8F%E5%9B%BE.png" alt=" "><br>
+计算2016年1月18日20天后的日期和星期
+</div>
 <br>
 <br>
