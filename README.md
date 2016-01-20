@@ -25,6 +25,8 @@ http://www.cplusplus.com<br>
 [****3.5  mktime](#3.5)<br>
 [********3.5.1  函数原型](#3.5.1)<br>
 [********3.5.2  举例说明](#3.5.2)<br>
+[4  set容器](#4)<br>
+[****4.1  set与multiset](#4.1)<br>
 
 ----
 <h2 name="0">0  前言</h2>
@@ -244,4 +246,18 @@ int main()
 计算2016年1月18日20天后的日期和星期
 </div>
 <br>
+
+<h2 name="4">4  set容器</h2>
+<h3 name="4.1">4.1  set与multiset</h3>
+需包含的头文件：<br>
+```
+#include <set>
+
+/*
+ *using std::set;
+ *using std::multiset;
+ */
+```
+<p>  表示集合的容器，set与multiset的区别仅是set内不允许重复，而multiset允许重复</p>
+##其余带补充
 <br>
