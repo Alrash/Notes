@@ -314,7 +314,7 @@ int main() {
 }
 ```
 <div align="center">
-<img src="https://github.com/bwfullcolor/Notes/blob/master/CPlusPlus/pictures/6.1-next_permutation\344\273\243\347\240\201\350\257\264\346\230\216.png" alt=" "><br>
+<img src="https://github.com/bwfullcolor/Notes/blob/master/CPlusPlus/pictures/6.1-next_permutation%E4%BB%A3%E7%A0%81%E8%AF%B4%E6%98%8E.png" alt=" "><br>
 取得1 2 3的全排列以及查看next_permutation终止情况
 </div>
 
@@ -361,4 +361,4 @@ bool next_permutation (BidirectionalIterator first,
 ```
 
 <h3 name="6.3">6.3  相似功能函数prev_permutation</h3>
-prev_permutation与next_permutation一样，属于algorithm头文件，但是功能与其相反，是产生上一个序列(3 2 1)
+prev_permutation与next_permutation一样，属于algorithm头文件，但是功能与其相反，是产生上一个序列(最小1 2 3)
