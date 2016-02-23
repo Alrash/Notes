@@ -313,6 +313,10 @@ int main() {
 	return 0;
 }
 ```
+<div align="center">
+<img src="https://github.com/bwfullcolor/Notes/blob/master/CPlusPlus/pictures/6.1-next_permutation\344\273\243\347\240\201\350\257\264\346\230\216.png" alt=" "><br>
+取得1 2 3的全排列以及查看next_permutation终止情况
+</div>
 
 实例代码：
 ```cpp
