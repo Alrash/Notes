@@ -28,6 +28,11 @@ http://www.cplusplus.com<br>
 [4  set容器](#4)<br>
 [****4.1  set与multiset](#4.1)<br>
 
+[6  next_permutation](#6)<br>
+[****6.1  部分说明](#6.1)<br>
+[****6.2  函数原型](#6.2)<br>
+[****6.3  相似功能函数prev_permutation](#6.3)<br>
+
 ----
 <h2 name="0">0  前言</h2>
 这篇笔记仅仅是对自己所学c++语言的补充，并没有包含c++的基本语法，以及一些常用的函数，包括类的一些东西。<br>
@@ -261,3 +266,60 @@ int main()
 <p>  表示集合的容器，set与multiset的区别仅是set内不允许重复，而multiset允许重复</p>
 ##其余带补充
 <br>
+
+<h2 name="6">6  next_permutation</h2>
+<h3 name="6.1">6.1  部分说明</h3>
+permutation 中文翻译：排列，置换<br>
+功能：按顺序全排列数组，得到下一个序列。例如，原数组为1 2 3，使用一次即可得到1 3 2，并且返回true；返回false的情况，得到原数组1 2 3<br>
+需包含的头文件：<br>
+```
+#include <algorithm>
+
+/*
+ *using std:next_permutation;
+ */
+```
+代码说明：
+```cpp
+/*
+ * 本程序主要解决的问题：使用1-9九个数，自由组合成分子、分母，使得结果等于1/3，问分子，分母分别是多少
+ * 解决思路：1.要得到1/3，并且只有九个数，则分子4位，分母5位（极有可能是 **** / 1****）
+ *           2.仅需全排列1-9，找出符合分子分母
+ */
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+	int a[9];
+	for (int i = 1; i < 10; i++) a[i - 1] = i;		//1 2 3 4 5 6 7 8 9
+
+	do
+	{
+		int x = a[0] * 1000 + a[1] * 100 + a[2] * 10 + a[3];				//得到分子
+		int y = a[4] * 10000 + a[5] * 1000 + a[6] * 100 + a[7] * 10 + a[8];	//等到分母
+		if (3 * x == y)														//符合的答案
+			cout << x << "/" << y << endl;
+	}while(next_permutation(a, a + 9));										//全排列
+
+	return 0;
+}
+```
+
+<h3 name="6.2">6.2  函数原型</h3>
+```cpp
+//default
+template <class BidirectionalIterator>
+bool next_permutation (BidirectionalIterator first,
+                         BidirectionalIterator last);
+
+//参数3，比较顺序，默认小于
+template <class BidirectionalIterator, class Compare>
+bool next_permutation (BidirectionalIterator first,
+                         BidirectionalIterator last, Compare comp);
+```
+
+<h3 name="6.3">6.3  相似功能函数prev_permutation</h3>
+prev_permutation与next_permutation一样，属于algorithm头文件，但是功能与其相反，是产生上一个序列(3 2 1)
