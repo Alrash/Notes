@@ -270,7 +270,8 @@ int main()
 <h2 name="6">6  next_permutation</h2>
 <h3 name="6.1">6.1  部分说明</h3>
 permutation 中文翻译：排列，置换<br>
-功能：按顺序全排列数组，得到下一个序列。例如，原数组为1 2 3，使用一次即可得到1 3 2，并且返回true；返回false的情况，得到原数组1 2 3<br>
+功能：按顺序全排列数组，得到下一个升序序列(比本数组序列大)。**注：不一定循环排列一次(具体见代码说明)**<br>
+例如，原数组为1 2 3，使用一次即可得到1 3 2，并且返回true；返回false的情况，得到序列小于本数组的序列<br>
 需包含的头文件：<br>
 ```
 #include <algorithm>
@@ -280,6 +281,40 @@ permutation 中文翻译：排列，置换<br>
  */
 ```
 代码说明：
+```cpp
+// next_permutation example
+#include <iostream>     // std::cout
+#include <algorithm>    // std::next_permutation, std::sort
+
+int main() {
+	int myints[] = { 1,2,3 };
+
+	std::sort(myints, myints + 3);
+
+	std::cout << "The 3! possible permutations with 3 elements:\n";
+	do {
+		std::cout << myints[0] << ' ' << myints[1] << ' ' << myints[2] << '\n';
+	} while (std::next_permutation(myints, myints + 3));
+
+	std::cout << "After loop: " << myints[0] << ' ' << myints[1] << ' ' << myints[2] << '\n';
+
+	std::cout << "\nNow, it runs twice.\n";
+
+	myints[0] = 3;
+	myints[1] = 1;
+	myints[2] = 2;
+
+	do {
+		std::cout << myints[0] << ' ' << myints[1] << ' ' << myints[2] << '\n';
+	} while (std::next_permutation(myints, myints + 3));
+
+	std::cout << "After loop: " << myints[0] << ' ' << myints[1] << ' ' << myints[2] << '\n';
+
+	return 0;
+}
+```
+
+实例代码：
 ```cpp
 /*
  * 本程序主要解决的问题：使用1-9九个数，自由组合成分子、分母，使得结果等于1/3，问分子，分母分别是多少
