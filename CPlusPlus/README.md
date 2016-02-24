@@ -5,6 +5,7 @@
 <h3>此笔记均以c11及其以后标准为基础</h3>
 <h3>参考网站：</h3>
 http://www.cplusplus.com<br>
+<a href="http://www.cnblogs.com/jiabei521/p/3335676.html">c++ const 关键字的使用方法</a><br>
 <br>
 
 ##【目录】
@@ -27,11 +28,12 @@ http://www.cplusplus.com<br>
 [********3.5.2  举例说明](#3.5.2)<br>
 [4  set容器](#4)<br>
 [****4.1  set与multiset](#4.1)<br>
-
+[5  map容器](#5)<br>
 [6  next_permutation](#6)<br>
 [****6.1  部分说明](#6.1)<br>
 [****6.2  函数原型](#6.2)<br>
 [****6.3  相似功能函数prev_permutation](#6.3)<br>
+[7  const](#7)<br>
 
 ----
 <h2 name="0">0  前言</h2>
@@ -267,6 +269,8 @@ int main()
 ##其余带补充
 <br>
 
+<h2 name="5">5  map容器</h2>
+
 <h2 name="6">6  next_permutation</h2>
 <h3 name="6.1">6.1  部分说明</h3>
 permutation 中文翻译：排列，置换<br>
@@ -362,3 +366,5 @@ bool next_permutation (BidirectionalIterator first,
 
 <h3 name="6.3">6.3  相似功能函数prev_permutation</h3>
 prev_permutation与next_permutation一样，属于algorithm头文件，但是功能与其相反，是产生上一个序列(最小1 2 3)
+
+<h2 name="7">7  const</h2>
