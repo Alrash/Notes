@@ -4,10 +4,16 @@
 1. 将图中边安从小到大排序
 2. 将选中的边的两个端点加入一个集合（若任意一个端点在一个集合内，另一个不在任何集合，则将另一个端点加入这个集合；若都不在任意集合内，则两个端点自成一个集合；若在两个不同的集合内，则将两个集合合并）
 3. 抛弃边的条件：两个端点在同一个集合内
+
 **适用状况：稀疏图，因为可能需要查询所有的边**
 
 ##图例
-
+<img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/first.jpg">
+<img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/second.jpg">
+<img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/third.jpg">
+<img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/fourth.jpg">
+<img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/fifth.jpg">
+<img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/sixth.jpg">
 
 ##算法需解决的问题
 
