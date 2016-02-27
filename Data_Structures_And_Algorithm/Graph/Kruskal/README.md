@@ -8,11 +8,18 @@
 **适用状况：稀疏图，因为可能需要查询所有的边**
 
 ##图例
+<img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/start.jpg">
+
 <img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/first.jpg">
+
 <img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/second.jpg">
+
 <img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/third.jpg">
+
 <img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/fourth.jpg">
+
 <img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/fifth.jpg">
+
 <img src="https://github.com/bwfullcolor/Notes/blob/master/Data_Structures_And_Algorithm/Graph/Kruskal/sixth.jpg">
 
 ##算法需解决的问题
