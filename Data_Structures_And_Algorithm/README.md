@@ -6,5 +6,6 @@
   <a href="https://segmentfault.com/a/1190000002641054"target="_blank">LCS LIS算法设计参考</a>
 
 ##导航
-<a href="https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Tree/AvlTree">Tree/AVLTree</a>
-<a href="https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Dp/LIS">Dp/LIS</a>
+- [Tree/AVLTree](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Tree/AvlTree")
+- [Dp/LIS](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Dp/LIS)
+- [Graph/Kruskal](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Graph/Kruskal)
