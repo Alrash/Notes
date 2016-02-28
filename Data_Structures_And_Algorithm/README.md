@@ -8,6 +8,7 @@
 ##导航
 - [Tree](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Tree)
  + [AVLTrss](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Tree/AvlTree)
+ + [Disjoin_Set(并查集)](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Tree/Disjoin_set)
 - [Dp](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Dp)
  + [LIS](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Dp/LIS)
 - [Graph](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Graph)
