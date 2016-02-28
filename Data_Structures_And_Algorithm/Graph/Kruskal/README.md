@@ -40,7 +40,7 @@
 
 ##算法需解决的问题
 如何方便的将边加入集合（可能会有2个以上的集合，而不是像上图示那样仅有2个集合）？<br>
-[并查集](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Tree://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Tree/Disjoin_set)
+[并查集](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Tree/Disjoin_set)
 
 ##代码示例
 ```cpp
