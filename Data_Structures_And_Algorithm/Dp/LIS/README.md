@@ -1,4 +1,4 @@
-#LIS
+#LIS 最长递增子序列
 
 ##参考目录
 <a href="https://segmentfault.com/a/1190000002641054"target="_blank">LIS算法设计</a><br>
