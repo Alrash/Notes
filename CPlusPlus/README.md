@@ -126,7 +126,7 @@ explicit	英->中：明确的<br>
 <br>
 
 <h2 name="3">3  ctime/time.h</h2>
-<h3 name="3.1">3.1  struct_tm</h3>
+<h3 name="3.1">3.1  struct tm</h3>
 包含日历日期和时间，分解其组成部分存储(用结构体)<br>
 一般的声明形式：(struct) tm \*newtime;/(struct) tm newtime;<br>
 <br>
