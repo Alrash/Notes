@@ -11,5 +11,6 @@
  + [Disjoin_Set(并查集)](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Tree/Disjoin_set)
 - [Dp](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Dp)
  + [LIS](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Dp/LIS)
+ + [LIC](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Dp/LIC)
 - [Graph](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Graph)
  + [Kruskal](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Graph/Kruskal)
