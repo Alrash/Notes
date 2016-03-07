@@ -37,6 +37,7 @@ http://www.cplusplus.com<br>
  + [6.2  函数原型](#6.2)
  + [6.3  相似功能函数prev_permutation](#6.3)
 - [7  const](#7)
+- [8  vector容器](#8)
 
 ----
 <h2 name="0">0  前言</h2>
@@ -402,3 +403,5 @@ bool next_permutation (BidirectionalIterator first,
 prev_permutation与next_permutation一样，属于algorithm头文件，但是功能与其相反，是产生上一个序列(最小1 2 3)
 
 <h2 name="7">7  const</h2>
+
+<h2 name="8">8 vector</h2>
