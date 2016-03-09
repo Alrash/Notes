@@ -32,12 +32,17 @@ http://www.cplusplus.com<br>
    - [4.2.1  insert](#4.2.1)
      + [4.2.1.1  参数解释](#4.2.1.1)
 - [5  map容器](#5)
+ + [5.1  基本介绍](#5.1)
+ + [5.2  声明](#5.2)
+ + [5.3  insert](#5.3)
+ + [5.4  find](#5.4)
 - [6  next_permutation](#6)
  + [6.1  部分说明](#6.1)
  + [6.2  函数原型](#6.2)
  + [6.3  相似功能函数prev_permutation](#6.3)
 - [7  const](#7)
 - [8  vector容器](#8)
+- [9  pair](#9)
 
 ----
 <h2 name="0">0  前言</h2>
@@ -305,6 +310,39 @@ void insert (initializer_list<value_type> il);
 <br>
 
 <h2 name="5">5  map容器</h2>
+<h3 name="5.1">5.1  基本介绍</h3>
+同vector、list、stack等，属于基本容器，用于存储类似（键值，键值对应的值）这样的数据（非元组），简单说起来就是想字典中使用拼音或偏旁助手查找汉字一样，这里拼音或助手就是键值，字典中这个拼音或助手下的所有汉字，就是其对应的值。（一对一关系（つ＞ω●）つ）
+
+<h3 name="5.2">5.2  声明</h3>
+所在头文件**map**<br>
+可以声明成各种组合：<br>
+map<string, int>  map<int, string>   map<char, string> map<string, int>等等
+
+具体如下：
+```
+#include <map>
+
+using std::map;
+
+map<int, int> imap;
+```
+
+<h3 name="5.3">5.3  insert</h3>
+由于是一对一的关系，所以插入时和一般容器的直接插入不同，这里的插入需要借助pair<T, V><br>
+例如：
+```cpp
+map<int, int> imap;
+pair<int, int> pa;
+
+//方法一
+imap.insert(pair<int, int>(0, 0));
+//方法二
+pa.first = pa.second = 0;
+imap.insert(pa);
+```
+其余待续
+
+<h3 name="5.4">5.4  find</h3>
 
 <h2 name="6">6  next_permutation</h2>
 <h3 name="6.1">6.1  部分说明</h3>
@@ -405,3 +443,5 @@ prev_permutation与next_permutation一样，属于algorithm头文件，但是功
 <h2 name="7">7  const</h2>
 
 <h2 name="8">8 vector</h2>
+
+<h2 name="9">9  pair</h2>
