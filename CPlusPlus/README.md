@@ -305,11 +305,10 @@ void insert (initializer_list<value_type> il);
 使用(1)，pair.first必为在集合中插入的位置，若存在，则pair.second为false，反之，为true<br>
 使用(2)，返回插入位置
 
-<h4 name="4.2.1.1">4.2.1.1  参数解释</h3>
+<h4 name="4.2.1.1">4.2.1.1  参数解释</h4>
 暂无
 
 ##其余带补充
-<br>
 
 <h2 name="5">5  map容器</h2>
 <h3 name="5.1">5.1  基本介绍</h3>
