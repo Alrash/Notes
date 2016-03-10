@@ -316,9 +316,15 @@ void insert (initializer_list<value_type> il);
 同vector、list、stack等，属于基本容器，用于存储类似（键值，键值对应的值）这样的数据（非元组），简单说起来就是想字典中使用拼音或偏旁助手查找汉字一样，这里拼音或助手就是键值，字典中这个拼音或助手下的所有汉字，就是其对应的值。（一对一关系（つ＞ω●）つ）
 
 <h3 name="5.2">5.2  声明</h3>
-所在头文件**map**<br>
+所在头文件**map** <br>
 可以声明成各种组合：<br>
-map<string, int>  map<int, string>   map<char, string> map<string, int>等等
+```
+map<string, int> 
+map<int, string>
+map<char, string>
+map<string, int>
+···
+```
 
 具体如下：
 ```
