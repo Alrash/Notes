@@ -16,3 +16,4 @@
  + [BFS Breadth-First-Search](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Graph/BFS)
  + [DFS Depth-First-Search](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Graph/DFS)
  + [Kruskal](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Graph/Kruskal)
+- [Heap](https://github.com/bwfullcolor/Notes/tree/master/Data_Structures_And_Algorithm/Heap)
