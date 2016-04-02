@@ -1,4 +1,4 @@
-<h1>PHP</h1>
+<h1 align="center">PHP</h1>
 
 ##暂时仅打算写下超全局数组
 
