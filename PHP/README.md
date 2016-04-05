@@ -1,8 +1,19 @@
 <h1 align="center">PHP</h1>
 
 ##暂时仅打算写下超全局变量
+**超全局变量共有以下几种**<br>
+***注意：不要被超字迷惑，即使是超全局变量，也有作用范围，而非所有页面均能使用***
+> * $GLOBALS    本页脚本，包含函数内的同名变量；若被include包含，则include脚本所在页下方的同名变量均被当成global的
+> * $_SERVER    几乎是返回值，只要环境不变，值不变
+> * $_REQUEST   ?
+> * $_POST      form的action属性所指向的页面
+> * $_GET       同上
+> * $_FILES     ?
+> * $_ENV       ?
+> * $_COOKIE    ?
+> * $_SESSION   使用session的任何地方
 
-server数组
+**$_SERVER变量**
 
 |元素|描述|
 |----|----|
