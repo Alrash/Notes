@@ -118,7 +118,7 @@ int main()
 }
 ```
 <div align="center">
-<img src="https://github.com/bwfullcolor/Notes/blob/master/CPlusPlus/pictures/1-%E6%9C%AA%E5%8A%A0explicit%E7%A8%8B%E5%BA%8F%E7%A4%BA%E6%84%8F%E5%9B%BE.png" alt=""><br>
+<img src="https://github.com/Alrash/Notes/blob/master/CPlusPlus/pictures/1-%E6%9C%AA%E5%8A%A0explicit%E7%A8%8B%E5%BA%8F%E7%A4%BA%E6%84%8F%E5%9B%BE.png" alt=""><br>
 未添加explicit关键字程序示意图
 </div>
 <br>
@@ -221,7 +221,7 @@ int main()
 }
 ```
 <div align="center">
-<img src="https://github.com/bwfullcolor/Notes/blob/master/CPlusPlus/pictures/3.5-mktime%E4%B8%80%E8%88%AC%E4%B8%BE%E4%BE%8B%E7%A4%BA%E6%84%8F%E5%9B%BE.png" alt="" ><br>
+<img src="https://github.com/Alrash/Notes/blob/master/CPlusPlus/pictures/3.5-mktime%E4%B8%80%E8%88%AC%E4%B8%BE%E4%BE%8B%E7%A4%BA%E6%84%8F%E5%9B%BE.png" alt="" ><br>
 一般举例示意图
 </div>
 <br>
@@ -261,7 +261,7 @@ int main()
 }
 ```
 <div align="center">
-<img src="https://github.com/bwfullcolor/Notes/blob/master/CPlusPlus/pictures/3.5-mktime%E8%AE%A1%E7%AE%97n%E5%A4%A9%E5%90%8E%E7%9A%84%E6%97%A5%E6%9C%9F%E7%A4%BA%E4%BE%8B%E7%A4%BA%E6%84%8F%E5%9B%BE.png" alt=" "><br>
+<img src="https://github.com/Alrash/Notes/blob/master/CPlusPlus/pictures/3.5-mktime%E8%AE%A1%E7%AE%97n%E5%A4%A9%E5%90%8E%E7%9A%84%E6%97%A5%E6%9C%9F%E7%A4%BA%E4%BE%8B%E7%A4%BA%E6%84%8F%E5%9B%BE.png" alt=" "><br>
 计算2016年1月18日20天后的日期和星期
 </div>
 <br>
@@ -413,7 +413,7 @@ int main() {
 }
 ```
 <div align="center">
-<img src="https://github.com/bwfullcolor/Notes/blob/master/CPlusPlus/pictures/6.1-next_permutation%E4%BB%A3%E7%A0%81%E8%AF%B4%E6%98%8E.png" alt=" "><br>
+<img src="https://github.com/Alrash/Notes/blob/master/CPlusPlus/pictures/6.1-next_permutation%E4%BB%A3%E7%A0%81%E8%AF%B4%E6%98%8E.png" alt=" "><br>
 取得1 2 3的全排列以及查看next_permutation终止情况
 </div>
 
